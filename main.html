@@ -5,18 +5,22 @@
 </head>
 <body>
     <form method="post">
+        <!-- Name Field -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Name" required><br><br>
 
+        <!-- Email Field -->
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Email" required><br><br>
 
+        <!-- Gender Field -->
         <label>Gender:</label><br>
         <input type="radio" id="gender_m" name="gender" value="male" required>
         <label for="gender_m">Male</label><br>
         <input type="radio" id="gender_f" name="gender" value="female">
         <label for="gender_f">Female</label><br><br>
 
+        <!-- Car Brands Dropdown -->
         <label for="cars">Car Brands:</label>
         <select id="cars" name="cars" required>
             <option value="" disabled selected>--Please choose an option--</option>
@@ -25,21 +29,27 @@
             <option value="ford">Ford</option>
         </select><br><br>
 
+        <!-- Age Field -->
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age" placeholder="Age" min="18" required><br><br>
+        <input type="number" id="age" name="age" placeholder="Age" min="1" required><br><br>
 
+        <!-- DOB Field -->
         <label for="dob">DOB:</label>
         <input type="date" id="dob" name="dob" required><br><br>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" pattern="[0-9]{10}" required><br><br>
+        <!-- Phone Number Field (Optional) -->
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
 
+        <!-- Password Field -->
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Password" minlength="6" required><br><br>
+        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
 
+        <!-- TOS Checkbox -->
         <input type="checkbox" id="tos" name="tos" required>
         <label for="tos">I agree to the TOS</label><br><br>
 
+        <!-- Submit Button -->
         <button type="submit">Submit</button>
     </form>
 </body>
